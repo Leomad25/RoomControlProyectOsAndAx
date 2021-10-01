@@ -1,0 +1,77 @@
+.add-background {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    width: 450px;
+    text-align: center;
+    border-top: solid 5px rgb(200, 200, 200);
+    border-bottom: solid 5px rgb(100, 100, 100);
+    border-left: solid 5px rgb(200, 200, 200);
+    border-right: solid 5px rgb(100, 100, 100);
+    border-radius: 10px;
+    background-color: rgb(150, 150, 150);
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+    .add-background form {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: .5em;
+        width: 90%;
+        background-color: rgb(80, 80, 80);
+        border-bottom: solid 5px rgb(200, 200, 200);
+        border-top: solid 5px rgb(50, 50, 50);
+        border-right: solid 5px rgb(200, 200, 200);
+        border-left: solid 5px rgb(50, 50, 50);
+    }
+
+        .add-background form button {
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: .3em;
+            width: 90%;
+            border-top: solid 3px rgb(200, 200, 200);
+            border-bottom: solid 3px rgb(100, 100, 100);
+            border-left: solid 3px rgb(200, 200, 200);
+            border-right: solid 3px rgb(100, 100, 100);
+            background-color: rgb(150, 150, 150);
+            font-family: 'Special Elite', cursive;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .add-background form input {
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: auto;
+            outline: none;
+            width: 90%;
+            background-color: rgba(0, 0, 0, 0);
+            margin-top: .2em;
+            margin-bottom: .2em;
+            color: rgb(0, 255, 0);
+            text-align: center;
+            padding-top: .1em;
+            padding-bottom: .1em;
+            font-size: 1em;
+        }
+
+    .add-background .btn-panel {
+        font-family: 'Special Elite', cursive;
+        border-top: solid 5px rgb(200, 200, 200);
+        border-bottom: solid 5px rgb(100, 100, 100);
+        border-left: solid 5px rgb(200, 200, 200);
+        border-right: solid 5px rgb(100, 100, 100);
+        background-color: rgb(150, 150, 150);
+        padding-top: .2em;
+        padding-bottom: .2em;
+        width: 80%;
+        font-size: 1.2em;
+        font-weight: bold;
+        color:rgb(0, 0, 0);
+        cursor: pointer;
+        border-radius: 10px;
+    }

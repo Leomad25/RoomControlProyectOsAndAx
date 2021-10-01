@@ -1,0 +1,168 @@
+.background {
+    margin-top: 1.5em;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: solid 5px rgb(200, 200, 200);
+    border-bottom: solid 5px rgb(100, 100, 100);
+    border-left: solid 5px rgb(200, 200, 200);
+    border-right: solid 5px rgb(100, 100, 100);
+    border-radius: 10px;
+    background-color: rgb(150, 150, 150);
+    padding: 5px;
+}
+
+/* CSS Divices Found */
+    .panel-background {
+        width: 100%;
+        text-align: center;
+    }
+
+        .panel-background button {
+            margin-top: 1em;
+            margin-bottom: 1em;
+            background-color: rgba(0, 255, 0, .2);
+            padding: 0.5em;
+            border: solid green 2px;
+            color: white;
+            border-radius: 25px;
+            text-transform: uppercase;
+            font-family: 'Special Elite', cursive;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .panel-background h2 {
+            font-size: 2em;
+            color: white;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .panel-background .device-background {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            border: dotted green 2px;
+            border-radius: 25px;
+            width: 90%;
+            padding-top: .5em;
+            padding-bottom: .5em;
+        }
+
+            .panel-background .device-background .device-info {
+                padding-top: .5em;
+                width: 70%;
+                margin-left: 5px;
+                background-color: rgba(0, 255, 0, .08);
+                border-radius: 25px;
+                display: block;
+                font-size: 1.2em;
+                text-align: left;
+                border: solid 1px black;
+                position: relative;
+                cursor: pointer;
+            }
+
+                .panel-background .device-background .device-info h1 {
+                    position: absolute;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                    text-transform: uppercase;
+                    cursor: pointer;
+                }
+
+            .panel-background .device-background .device-exBtn {
+                width: 30%;
+                display: block;
+            }
+
+                .panel-background .device-background .device-exBtn section {
+                    display: block;
+                    text-align: center;
+                    align-items: center;
+                }
+
+                    .panel-background .device-background .device-exBtn section p {
+                        cursor: pointer;
+                        text-align: center;
+                    }
+
+                .panel-background .device-background .device-exBtn button {
+                    cursor: pointer;
+                    margin: 0;
+                    padding: 0;
+                    background-color: rgba(0, 255, 0, .4);
+                    border: solid green 2px;
+                    width: 100px;
+                    font-weight: lighter;
+                    text-transform: capitalize;
+                    border: solid 1px black;
+                    padding-top: .5em;
+                    padding-bottom: .5em;
+                }
+
+/* CSS Divice Not Found */
+
+    .background .deviceNotFound {
+        width: 100%;
+    }
+
+        .background .deviceNotFound p {
+            text-align: center;
+        }
+
+    .background .deviceNotFound-support {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(100, 100, 100);
+        border-bottom: solid 5px rgb(200, 200, 200);
+        border-top: solid 5px rgb(50, 50, 50);
+        border-right: solid 5px rgb(200, 200, 200);
+        border-left: solid 5px rgb(50, 50, 50);
+        width: 400px;
+        text-align: center;
+    }  
+
+        .background .deviceNotFound-support button {
+            background-color: rgb(150, 150, 150);
+            border-top: solid 5px rgb(200, 200, 200);
+            border-bottom: solid 5px rgb(50, 50, 50);
+            border-left: solid 5px rgb(200, 200, 200);
+            border-right: solid 5px rgb(50, 50, 50);
+            color: rgb(0, 255, 0);
+            padding-top: .2em;
+            padding-bottom: .2em;
+            font-size: 1em;
+            width: 95%;
+            font-family: 'Special Elite', cursive;
+            margin-top: .2em;
+            margin-bottom: .2em;
+            cursor: pointer;
+        }
+
+        .background .deviceNotFound-support .inside-box {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: .2em;
+            background-color: rgb(150, 150, 150);
+            border-top: solid 5px rgb(200, 200, 200);
+            border-bottom: solid 5px rgb(50, 50, 50);
+            border-left: solid 5px rgb(200, 200, 200);
+            border-right: solid 5px rgb(50, 50, 50);
+        }
+
+            .background .deviceNotFound-support .inside-box button {
+                width: 48%;
+                background-color: rgb(150, 150, 150);
+                border-top: solid 2px rgb(200, 200, 200);
+                border-bottom: solid 2px rgb(50, 50, 50);
+                border-left: solid 2px rgb(200, 200, 200);
+                border-right: solid 2px rgb(50, 50, 50);
+            }

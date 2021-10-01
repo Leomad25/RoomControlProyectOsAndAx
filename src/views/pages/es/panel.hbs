@@ -1,0 +1,36 @@
+{{>es/titlePanel}}
+{{>es/messages}}
+{{#if devices}}
+<section class="panel-background">
+    <button onclick="window.location.href='/es/panel/add'">Vincular otro dispositivo</button>
+    <section>
+        <h2>Mis dispositivos</h2>
+        {{#each devices}}
+            <section class="device-background">
+                <section class="device-info" onclick="window.location.href='panel/control?iddevice={{iddevice}}'">
+                    <h1>{{namedevice}}</h1>
+                </section>
+                <section class="device-exBtn">
+                    <button onclick="window.location.href='/es/panel/delete?iddevice={{iddevice}}'">Eliminar</button>
+                </section>
+            </section>
+        {{/each}}
+    </section>
+</section>
+{{else}}
+<section class="background">
+    <section class="deviceNotFound">
+        <p>No tienes dispositivos vinculados a esta cuenta,</p>
+        <p>un técnico puede ayudarte a vincular tu producto</p>
+        <p>o puedes pulsar el botón ‘¿Como vincular</p>
+        <p> un dispositivo?’ para ver cómo hacerlo.</p>
+    </section>
+    <section class="deviceNotFound-support">
+        <button onclick="window.location.href='/es/panel/add'">Vincular mi dispositivo</button>
+        <button onclick="">Contactanos</button>
+        <button onclick="">¿Como vincular un dispositivo?</button>
+        </section>
+    </section>
+</section>
+{{/if}}
+{{>es/signature}}

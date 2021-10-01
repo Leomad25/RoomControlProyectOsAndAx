@@ -1,0 +1,14 @@
+.signature section {
+    border-top: solid 1px rgb(0, 255, 0);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+}
+
+    .signature section p {
+        text-align: center;
+        font-size: 1em;
+    }

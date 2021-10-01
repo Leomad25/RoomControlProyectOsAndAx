@@ -1,0 +1,53 @@
+.messages {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 15;
+    top: 0;
+    left: 0;
+}
+
+    .messages .background {
+        background-color: rgb(150, 150, 150);
+        position: absolute;
+        width: 450px;
+        margin-left: 50%;
+        margin-top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        border-top: solid 5px rgb(200, 200, 200);
+        border-bottom: solid 5px rgb(50, 50, 50);
+        border-left: solid 5px rgb(200, 200, 200);
+        border-right: solid 5px rgb(50, 50, 50);
+        border-radius: 10px;
+        text-align: center;
+    }
+
+        .messages .background p {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .messages .background .background-btn {
+            width: 80%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-left: 10%;
+            border-top: solid 2px rgb(0, 255, 0);
+        }
+
+            .messages .background .background-btn button {
+                background-color: rgba(0, 0, 0, 0);
+                border: solid 3px rgb(0, 255, 0);
+                padding: 10px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+                .messages .background .background-btn button img {
+                    width: 40px;
+                }

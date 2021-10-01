@@ -1,0 +1,16 @@
+{{#if message}}
+<section class="messages" id="messages-content">
+    <span>
+        <link href="/partials/messages/master.css" rel="stylesheet" type="text/css">
+        <section class="background">
+            <p>{{message}}</p>
+            <section class="background-btn">
+                <button onclick="closeMsgPanel()">
+                    <img src="/img/icons/color/cross.png">
+                </button>
+            </section>
+        </section>
+        <script src="/partials/messages/main.js"></script>
+    </span>
+</section>
+{{/if}}

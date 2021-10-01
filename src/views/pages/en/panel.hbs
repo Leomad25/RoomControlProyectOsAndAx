@@ -1,0 +1,36 @@
+{{>en/titlePanel}}
+{{>en/messages}}
+{{#if devices}}
+<section class="panel-background">
+    <button onclick="window.location.href='/en/panel/add'">Link other device</button>
+    <section>
+        <h2>MY DEVICES</h2>
+        {{#each devices}}
+            <section class="device-background">
+                <section class="device-info" onclick="window.location.href='panel/control?iddevice={{iddevice}}'">
+                    <h1>{{namedevice}}</h1>
+                </section>
+                <section class="device-exBtn">
+                    <button onclick="window.location.href='/en/panel/delete?iddevice={{iddevice}}'">Eliminar</button>
+                </section>
+            </section>
+        {{/each}}
+    </section>
+</section>
+{{else}}
+<section class="background">
+    <section class="deviceNotFound">
+        <p>you dont have devices linked to this account</p>
+        <p>a technician can help you link your product,</p>
+        <p>or you can use the the button 'How linked a device'</p>
+        <p>to see how to do it.</p>
+    </section>
+    <section class="deviceNotFound-support">
+        <button onclick="window.location.href='/en/panel/add'">Link my product</button>
+        <button onclick="">Contact us</button>
+        <button onclick="">How linked a device</button>
+        </section>
+    </section>
+</section>
+{{/if}}
+{{>en/signature}}

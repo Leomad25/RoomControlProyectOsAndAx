@@ -1,0 +1,23 @@
+{{>en/langSelector}}
+<h1 class="font-family-title">Switch Remote Control</h1>
+<section class="login-form">
+    <section class="forms">
+        <form action="/en/authentication/login" method="POST">
+            <section class="body-form">
+                <section class="title-form">
+                    <h2>Log in Form</h2>
+                </section>
+                <section class="menu-form">
+                    <input type="text" name="username" placeholder="user">
+                    <br>
+                    <input type="password" name="password" placeholder="password">
+                </section>
+                <section class="bottom-form">
+                    <button type="submit">Log in</button>
+                </section>
+            </section>
+        </form>
+        <button class="btn-redirect" onclick="window.location.href='/en/newaccount';">Create new account</button>
+    </section>
+</section>
+{{>en/signature}}

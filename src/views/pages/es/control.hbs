@@ -1,0 +1,129 @@
+{{>es/titlePanel}}
+{{>es/messages}}
+<section id="forms-background" class="forms-background" style="display: none;">
+    <section class="forms-background-grup">
+        <section id="form-editName-device" style="display: none;">
+            <form action="/es/panel/control/changeNameOption?iddevice={{iddevice}}&key=device" method="POST">
+                <h1>Cambiar nombre del dispositivo</h1>
+                <input type="text" name="valueField" placeholder="set name" value="{{deviceOptions.0.namedevice}}">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="form-editNameOption-a" style="display: none;">
+            <form action="/es/panel/control/changeNameOption?iddevice={{iddevice}}&key=oa" method="POST">
+                <h1>Cambiar nombre a 'Opción A'</h1>
+                <input type="text" name="valueField" placeholder="set name" value="{{deviceOptions.0.optionA_tag}}">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="form-editNameOption-b" style="display: none;">
+            <form action="/es/panel/control/changeNameOption?iddevice={{iddevice}}&key=ob" method="POST">
+                <h1>Cambiar nombre a 'Opción B'</h1>
+                <input type="text" name="valueField" placeholder="set name" value="{{deviceOptions.0.optionB_tag}}">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="form-editNameOption-c" style="display: none;">
+            <form action="/es/panel/control/changeNameOption?iddevice={{iddevice}}&key=oc" method="POST">
+                <h1>Cambiar nombre a 'Opción C'</h1>
+                <input type="text" name="valueField" placeholder="set name" value="{{deviceOptions.0.optionC_tag}}">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="form-editNameOption-d" style="display: none;">
+            <form action="/es/panel/control/changeNameOption?iddevice={{iddevice}}&key=od" method="POST">
+                <h1>Cambiar nombre a 'Opción D'</h1>
+                <input type="text" name="valueField" placeholder="set name" value="{{deviceOptions.0.optionD_tag}}">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="form-editNameOption-e" style="display: none;">
+            <form action="/es/panel/control/changeNameOption?iddevice={{iddevice}}&key=oe" method="POST">
+                <h1>Cambiar nombre a 'Opción E'</h1>
+                <input type="text" name="valueField" placeholder="set name" value="{{deviceOptions.0.optionE_tag}}">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <button onclick="formsBackgroundHidden();">Cerrar</button>
+    </section>
+</section>
+<section class="background-panel">
+    <section class="background-title">
+        <section class="title_id"><p>id: {{iddevice}}</p></section>
+        <section class="title-name" onclick="changeTitle()"><p>{{deviceOptions.0.namedevice}}</p></section>
+    </section>
+    <section class="background-options">
+        <section class="background-options-title">
+            <h1>CAMBIAR ENCENDER/APAGAR</h1>
+        </section>
+        <section class="background-option">
+            <button class="edit-name" onclick="editNameOption('A');"><img src="/img/icons/black/quill.png"></button>
+            <h2>{{deviceOptions.0.optionA_tag}}</h2>
+            {{#if deviceOptions.0.optionA}}
+                <form class="btn-option-on" action="/es/panel/control?iddevice={{iddevice}}&optionA=0" method="POST">
+                    <button type="submit">ON</button>
+                </form>
+            {{else}}
+                <form class="btn-option-off" action="/es/panel/control?iddevice={{iddevice}}&optionA=1" method="POST">
+                    <button type="submit">OFF</button>
+                </form>
+            {{/if}}
+        </section>
+        <section class="background-option">
+            <button class="edit-name" onclick="editNameOption('B');"><img src="/img/icons/black/quill.png"></button>
+            <h2>{{deviceOptions.0.optionB_tag}}</h2>
+            {{#if deviceOptions.0.optionB}}
+                <form class="btn-option-on" action="/es/panel/control?iddevice={{iddevice}}&optionB=0" method="POST">
+                    <button type="submit">ON</button>
+                </form>
+            {{else}}
+                <form class="btn-option-off" action="/es/panel/control?iddevice={{iddevice}}&optionB=1" method="POST">
+                    <button type="submit">OFF</button>
+                </form>
+            {{/if}}
+        </section>
+        <section class="background-option">
+            <button class="edit-name" onclick="editNameOption('C');"><img src="/img/icons/black/quill.png"></button>
+            <h2>{{deviceOptions.0.optionC_tag}}</h2>
+            {{#if deviceOptions.0.optionC}}
+                <form class="btn-option-on" action="/es/panel/control?iddevice={{iddevice}}&optionC=0" method="POST">
+                    <button type="submit">ON</button>
+                </form>
+            {{else}}
+                <form class="btn-option-off" action="/es/panel/control?iddevice={{iddevice}}&optionC=1" method="POST">
+                    <button type="submit">OFF</button>
+                </form>
+            {{/if}}
+        </section>
+        <section class="background-option">
+            <button class="edit-name" onclick="editNameOption('D');"><img src="/img/icons/black/quill.png"></button>
+            <h2>{{deviceOptions.0.optionD_tag}}</h2>
+            {{#if deviceOptions.0.optionD}}
+                <form class="btn-option-on" action="/es/panel/control?iddevice={{iddevice}}&optionD=0" method="POST">
+                    <button type="submit">ON</button>
+                </form>
+            {{else}}
+                <form class="btn-option-off" action="/es/panel/control?iddevice={{iddevice}}&optionD=1" method="POST">
+                    <button type="submit">OFF</button>
+                </form>
+            {{/if}}
+        </section>
+        <section class="background-option">
+            <button class="edit-name" onclick="editNameOption('E');"><img src="/img/icons/black/quill.png"></button>
+            <h2>{{deviceOptions.0.optionE_tag}}</h2>
+            {{#if deviceOptions.0.optionE}}
+                <form class="btn-option-on" action="/es/panel/control?iddevice={{iddevice}}&optionE=0" method="POST">
+                    <button type="submit">ON</button>
+                </form>
+            {{else}}
+                <form class="btn-option-off" action="/es/panel/control?iddevice={{iddevice}}&optionE=1" method="POST">
+                    <button type="submit">OFF</button>
+                </form>
+            {{/if}}
+        </section>
+    </section>
+    <section class="btn-back">
+        <button onclick="window.location.href='/es/panel'">Regresar al panel</button>
+    </section>
+</section>
+{{>es/signature}}

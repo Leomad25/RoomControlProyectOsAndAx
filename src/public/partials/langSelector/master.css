@@ -1,0 +1,45 @@
+.langSelector {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    background-color: rgb(200, 200, 200);
+    border-bottom: solid 2px rgb(0, 255, 0);
+    width: 100%;
+    height: 2em;
+}
+
+    .langSelector span {
+        display: inline-flex;
+        float: right;
+        position: static;
+        text-align: center;
+        align-items: center;
+    }
+
+    .langSelector .text {
+        display: block;
+        color: black;
+        margin-right: 1em;
+    }
+
+    .langSelector .btn {
+        background-color: rgba(0, 0, 0, .1);
+        border-top-left-radius: 25%;
+        border-bottom-right-radius: 25%;
+        border-bottom: solid 3px rgba(0, 0, 0, .2);
+        border-right: solid 3px rgba(0, 0, 0, .2);
+        border-top: solid 3px rgba(255, 255, 255, .4);
+        border-left: solid 3px rgba(255, 255, 255, .4);
+        cursor: pointer;
+        margin-right: 1em;
+    }
+
+            .langSelector .btn:hover {
+                background-color: rgba(0, 0, 0, .3);
+            }
+        
+        .langSelector .btn img {
+            display: block;
+            text-align: center;
+            align-items: center;
+            width: 1.5em;
+        }

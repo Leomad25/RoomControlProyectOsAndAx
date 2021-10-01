@@ -1,0 +1,27 @@
+{{>es/langSelector}}
+<h1 class="font-family-title">Switch Remote Control</h1>
+<section class="register-form">
+    <section class="forms">
+        <form action="/es/authentication/register" method="POST">
+            <section class="body-form">
+                <section class="title-form">
+                    <h2>Formulario de registro</h2>
+                </section>
+                <section class="menu-form">
+                    <input type="text" name="fullname" placeholder="nombre completo">
+                    <br>
+                    <input type="email" name="email" placeholder="correo electronico">
+                    <br>
+                    <input type="text" name="username" placeholder="usuario">
+                    <br>
+                    <input type="password" name="password" placeholder="contraseña">
+                </section>
+                <section class="bottom-form">
+                    <button type="submit">Crear nueva cuenta</button>
+                </section>
+            </section>
+        </form>
+        <button class="btn-redirect" onclick="window.location.href='/es';">Ya tengo una cuenta</button>
+    </section>
+</section>
+{{>es/signature}}

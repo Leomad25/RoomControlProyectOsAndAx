@@ -1,0 +1,220 @@
+.background-panel {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(0, 100, 0);
+    border-radius: 25px 25px 25px 25px;
+    border: solid black 2px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+    .background-panel .btn-back {
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+        .background-panel .btn-back button {
+            background-color: rgb(100, 100, 100);
+            border-bottom: solid 5px rgb(200, 200, 200);
+            border-top: solid 5px rgb(50, 50, 50);
+            border-right: solid 5px rgb(200, 200, 200);
+            border-left: solid 5px rgb(50, 50, 50);
+            color: rgb(0, 255, 0);
+            font-family: 'Special Elite', cursive;
+            font-size: 1.5em;
+            padding-top: .2em;
+            cursor: pointer;
+            padding-left: 1em;
+            padding-right: 1em;
+            border-radius: 10px;
+        }
+
+
+    .background-panel .background-title {
+        background-color: rgb(0, 255, 0);
+        display: flex;
+        padding: .5em;
+        border-radius: 25px 25px 0 0;
+        border-bottom: solid black 2px;
+    }
+
+        .background-panel .background-title .title_id {
+            color: black;
+            font-size: 2em;
+            padding-right: .5em;
+            border-right: dotted black 2px;
+            cursor: default;
+        }
+
+        .background-panel .background-title .title-name {
+            color: black;
+            font-size: 2em;
+            margin-left: .5em;
+            cursor: pointer;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+        
+            .background-panel .background-title .title-name p {
+                cursor: pointer;
+            }
+
+    .background-panel .background-options {
+        border: solid black 2px;
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: .6em;
+        margin-bottom: .6em;
+    }
+
+        .background-panel .background-options .background-options-title {
+            border-bottom: solid black 2px;
+            font-size: 1.5em;
+            text-align: center;
+            padding-top: .15em;
+            padding-bottom: .15em;
+            background-color: rgb(0, 150, 0);
+            cursor: default;
+            text-transform: capitalize;
+        }
+
+        .background-panel .background-options .background-option {
+            border-top: dotted black 2px;
+            border-bottom: dotted black 2px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            width: 480px;
+            height: 30px;
+            position: relative;
+        }
+
+            .background-panel .background-options .background-option button {
+                width: 30px;
+                height: 30px;
+                background-color: rgba(255, 255, 255, .1);
+                border: 0;
+                border-right: dotted black 2px;
+                cursor: pointer;
+            }
+
+                .background-panel .background-options .background-option button img {
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+            
+            .background-panel .background-options .background-option h2 {
+                position: absolute;
+                font-size: 25px;
+                padding-top: 6px;
+                display: flex;
+                cursor: default;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .background-panel .background-options .background-option form {
+                position: absolute;
+                border-left: dotted black 2px;
+                right: 0;
+            }
+
+                .background-panel .background-options .background-option form button {
+                    font-family: 'Special Elite', cursive;
+                    font-weight: bold;
+                    font-size: 1em;
+                    width: 50px;
+                }
+
+                .background-panel .background-options .background-option .btn-option-on button {
+                    background-color: rgba(0, 0, 0, .5);
+                    color: white;
+                }
+
+                .background-panel .background-options .background-option .btn-option-off button {
+                    background-color: rgba(255, 255, 255, .5);
+                    color: black;
+                }
+
+.forms-background {
+    background-color: rgba(0, 0, 0, .8);
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+    .forms-background .forms-background-grup {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        background-color: rgb(150, 150, 150);
+        border-top: solid 5px rgb(200, 200, 200);
+        border-bottom: solid 5px rgb(50, 50, 50);
+        border-left: solid 5px rgb(200, 200, 200);
+        border-right: solid 5px rgb(50, 50, 50);
+        border-radius: 5px;
+        margin-top: 2em;
+        text-align: center;
+        width: 450px;
+    }
+
+        .forms-background .forms-background-grup form {
+            background-color: rgba(0, 0, 0, .5);
+            border-bottom: solid 5px rgba(255, 255, 255, .5);
+            border-top: solid 5px rgba(0, 0, 0, .5);
+            border-right: solid 5px rgba(255, 255, 255, .5);
+            border-left: solid 5px rgba(0, 0, 0, .5);
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 1em;
+        }
+
+            .forms-background .forms-background-grup form h1 {
+                font-size: 1.5em;
+                margin-top: .5em;
+                margin-bottom: .5em;
+            }
+
+            .forms-background .forms-background-grup form input {
+                background-color: rgba(0, 0, 0, 0);
+                border-bottom: solid 5px rgba(255, 255, 255, .5);
+                border-top: solid 5px rgba(0, 0, 0, .5);
+                border-right: solid 5px rgba(255, 255, 255, .5);
+                border-left: solid 5px rgba(0, 0, 0, .5);
+                width: 90%;
+                text-align: center;
+                color: rgb(0, 255, 0);
+                font-size: 1.2em;
+                padding-top: .3em;
+                padding-bottom: .2em;
+                border-radius: 5px;
+                font-family: 'Special Elite', cursive;
+                outline: none;
+                margin-bottom: .5em;
+            }
+
+        .forms-background .forms-background-grup button {
+            width: 80%;
+            background-color: rgb(150, 150, 150);
+            border-top: solid 5px rgb(200, 200, 200);
+            border-bottom: solid 5px rgb(50, 50, 50);
+            border-left: solid 5px rgb(200, 200, 200);
+            border-right: solid 5px rgb(50, 50, 50);
+            border-radius: 5px;
+            margin-top: .5em;
+            margin-bottom: .5em;
+            font-size: 1em;
+            font-weight: bold;
+            color: rgb(0, 255, 0);
+            padding-top: .3em;
+            padding-bottom: .1em;
+            font-family: 'Special Elite', cursive;
+            text-transform: uppercase;
+        }
